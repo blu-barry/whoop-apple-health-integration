@@ -25,7 +25,7 @@ struct LoginView: View {
                         "User name (email address)",
                         text: $username
                     )
-                    .focused($emailFieldIsFocused)
+                    //.focused($emailFieldIsFocused)
                     .onSubmit {
                         //validate(name: username)
                     }
@@ -33,8 +33,8 @@ struct LoginView: View {
                     .disableAutocorrection(true)
                     .border(.secondary)
 
-                    Text(username)
-                        .foregroundColor(emailFieldIsFocused ? .red : .blue)
+                    //Text(username)
+                    //    .foregroundColor(emailFieldIsFocused ? .red : .blue)
             }
             .padding()
             
@@ -43,7 +43,7 @@ struct LoginView: View {
                         "Password",
                         text: $password
                     )
-                    .focused($passwordFieldIsFocused)
+                    //.focused($passwordFieldIsFocused)
                     .onSubmit {
                         //validate(password: password)
                     }
@@ -51,8 +51,8 @@ struct LoginView: View {
                     .disableAutocorrection(true)
                     .border(.secondary)
 
-                    Text(password)
-                        .foregroundColor(passwordFieldIsFocused ? .red : .blue)
+                    //Text(password)
+                    //    .foregroundColor(passwordFieldIsFocused ? .red : .blue)
             }
             .padding()
             
